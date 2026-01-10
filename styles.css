@@ -8,10 +8,10 @@ header
     background-color: #a63961;
     height: 250px; 
 
-    background-image: url(images/smallstar.png);
+    /* background-image: url(images/smallstar.png);
     background-position: -200px -100px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
     
 }
 h1 {
@@ -30,10 +30,10 @@ article {
     margin: auto;
 }
 .projects {
-    background-image: url(images/bigstar.png);
+    /* background-image: url(images/bigstar.png);
     background-position: 200px -108px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,9 +81,7 @@ footer {
     padding: 10px;
     font-family: "Kumbh Sans";
 }
-body {
-    position: relative;
-}
+
 .disco {
     position: absolute;  
     bottom: 70px;        
@@ -95,13 +93,13 @@ body {
            
 }
 @media only screen and (min-width: 600px){
-    body {
+    /* body {
         height: 100%;
         margin: 0;
         display: flex;
         flex-direction: column;
 
-    }
+    } */
 
     main {
         flex: 1;
@@ -119,7 +117,6 @@ body {
         width: 100%;
     }
     h1 {
-      margin-top: 100px; 
       text-align: center;
     padding: 0; 
     }
@@ -137,6 +134,9 @@ body {
     position: relative;
     width: 100%;
     padding-bottom: 1rem;
+    position: relative;
+
+
  }
  
  .projectbox {
@@ -148,6 +148,7 @@ body {
     height: 277.4px;
 
  }
+
  
  h2{
     padding-top: 20px;
@@ -166,13 +167,24 @@ body {
     line-height: 1.8rem;
  }
  .disco{
-    position: absolute;
-    bottom: -160px;
+    position: fixed;
+    bottom:50px;
     right: 40% ;
     width: 20%; 
+    /* transform: translateY(160px); */
+    transform: none;
+    z-index: 2;
  }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
+main {
+    padding-bottom: 100px; 
+}
 
-/* id are # class are . */
 }
