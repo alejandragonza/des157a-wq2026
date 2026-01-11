@@ -3,10 +3,12 @@ body {
   margin: auto;
 }
 
+/* this is the banner mentioned */
 header
 {
     background-color: #a63961;
     height: 250px; 
+    
 
     /* background-image: url(images/smallstar.png);
     background-position: -200px -100px;
@@ -14,14 +16,16 @@ header
     background-size: 100%; */
     
 }
+
 h1 {
     font-family: "Shrikhand";
     color: #f9e7d6;
     font-size: 40px;
     text-align: center;
     margin:0;
-    padding: 50px;
+    padding: 50px 20px 20px 20px;
 }
+
 article {
 
     color:#a63961;
@@ -37,8 +41,13 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    position: relative;
+    padding-bottom: 50px; 
 }
+.projectbox a:hover {
+    color: rgb(37, 94, 21);
+}
+
 section {
 
     background-color: rgba(166, 57, 97, 0.75);
@@ -48,11 +57,21 @@ section {
     width: 100%;
     max-width: 18rem;
 }
+section a:hover {
+    animation: wiggle 0.6s ease-in-out;
+    cursor: pointer;
+}
 section h2 {
     font-family: "Kumbh Sans";
     color:#FAE9D6;
     text-align: center;
    margin-top: 0;
+   transition: transform 0.25s ease;
+}
+section h2:hover {
+    transform: scale(1.25);
+  cursor: pointer;
+  color:rgb(26, 71, 13)
 }
 
 section ul {
@@ -84,23 +103,38 @@ footer {
 
 .disco {
     position: absolute;  
-    bottom: 70px;        
-    left: 80%;           
-    transform: translateX(-50%); 
+    bottom: -10px; 
+    right: 0;       
     width: 40%;
-    height: auto;         
+    height: auto;       
     z-index: 2; 
+    transform: none;
+    animation: wiggle 1s infinite;
+    transform-origin: bottom center;
            
 }
+footer a{
+    text-decoration: none;
+    color: #f9e7d6;
+}
+
+footer a:hover {
+    color: rgb(37, 94, 21);
+}
+/* #container {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto; 
+}
+#banner {
+    width: 110px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+} */
+
 @media only screen and (min-width: 600px){
-    /* body {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-
-    } */
-
+    
     main {
         flex: 1;
         display: flex;
@@ -110,19 +144,26 @@ footer {
         padding-bottom: 4rem;
         box-sizing: border-box;
     }
+
     header {
         height: 250px;  
-        background-position: -150px -120px;
-        background-size: 120%;
+        /* background-position: -150px -120px;
+        background-size: 120%; */
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     h1 {
-      text-align: center;
-    padding: 0; 
+        text-align: center;
+        padding: 0; 
+        margin: 0;
     }
     p {
         font-size: 20px;
     }
+
  .projects {
     display:flex;
     flex-direction: row;
@@ -133,10 +174,8 @@ footer {
     width: 100%;
     position: relative;
     width: 100%;
-    padding-bottom: 1rem;
+    padding: 1rem;
     position: relative;
-
-
  }
  
  .projectbox {
@@ -146,7 +185,6 @@ footer {
     margin: 0;
     align-items: center;
     height: 277.4px;
-
  }
 
  
@@ -167,13 +205,15 @@ footer {
     line-height: 1.8rem;
  }
  .disco{
-    position: fixed;
-    bottom:50px;
-    right: 40% ;
-    width: 20%; 
+    position: absolute;
+    bottom:0;
+    right: 30px;
+    width: 15%; 
     /* transform: translateY(160px); */
     transform: none;
     z-index: 2;
+    animation: wiggle 1s infinite;
+    transform-origin: bottom center;
  }
 
 footer {
@@ -187,4 +227,12 @@ main {
     padding-bottom: 100px; 
 }
 
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2.5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(2.5deg); }
+    100% { transform: rotate(0deg); }
 }
