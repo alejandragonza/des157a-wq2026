@@ -3,7 +3,7 @@ body {
   margin: auto;
 }
 
-/* this is the banner mentioned */
+
 header
 {
     background-color: #a63961;
@@ -41,9 +41,8 @@ article {
     position: relative;
     padding-bottom: 50px; 
     display: flex;
-  justify-content: center;
-
-  gap: 2em;
+    justify-content: center;
+    gap: 2em;
 
   
   max-width: 1200px;
@@ -215,7 +214,7 @@ footer a:hover {
  .disco{
     position: absolute;
   bottom: 0;
-  right:0;   /* WAS 30px */
+  right:0;   
   width: 15%;
   max-width: 250px;
   height: auto;
@@ -226,21 +225,22 @@ footer a:hover {
     max-width: none;
     text-align: center;
     box-sizing: border-box;
-    padding: none;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
  }
 
 #container {
-    max-width: 1200px;
+   
     min-width: 900px;
     margin: 0 auto; 
 }
 #banner {
     width: 100%;
-    max-width: 1600px;
     height: 250px;
     position: relative;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 }
