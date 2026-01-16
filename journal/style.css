@@ -5,9 +5,9 @@ body {
   
   
   article {
-      /* height: 250px;  */
+      
       min-height: 250px; 
-      /* padding: 1.5em 1em; */
+     
  
   }
 
@@ -37,7 +37,7 @@ body {
 
   }
   h3 {
-    font-family: "Kum";
+    font-family: "Kumbh Sans";
     text-align: center;
     color: #a63961;
   }
@@ -69,3 +69,48 @@ footer a{
 footer a:hover {
     color: rgb(37, 94, 21);
 }
+@media (min-width: 700px) {
+
+    article {
+      max-width: none;
+      margin: 0 auto;
+    }
+    h2 {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;       
+        align-items: center;          
+        justify-content: flex-start; 
+        height: 250px;                
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+  
+    p {
+      max-width: 60em;      
+      font-size: 1.1rem;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 2em;
+    }
+  
+    .links {
+      max-width: 30em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5em;  /* subtle indent, not huge */
+    }
+  
+    time {
+      display: block;
+      max-width: 60ch;
+      margin: 1em auto;
+    }
+  
+    h2 {
+      font-size: 3.2rem;    /* more presence on desktop */
+    }
+  }
+  
