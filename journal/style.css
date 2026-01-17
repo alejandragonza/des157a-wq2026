@@ -71,6 +71,7 @@ footer a{
 footer a:hover {
     color: rgb(37, 94, 21);
 }
+
 @media (min-width: 700px) {
 
     article {
