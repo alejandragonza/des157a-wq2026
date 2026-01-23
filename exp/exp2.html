@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <p> This is the color you selected</p>
+    
+    <script>
+    //Using prompt() ask users to input their favorite color from a list of colors. Then change the background color of the page to that color. (so i didnt do favorite colors i just make them chose from the ones on the list)
+
+        var colors = ['red', 'blue', 'green', 'purple'];
+
+        function chooseColor(){
+         var userColor = prompt ('choose a color: red, blue, green or purple');
+
+         for (var i=0;i<colors.length; i++){
+            if (userColor === colors[i]){
+                document.body.style.backgroundColor = userColor;
+                return;
+            }
+
+         }
+            return chooseColor();
+        }
+        chooseColor();
+            
+        
+        
+    </script>
+</body>
+
+</html>
