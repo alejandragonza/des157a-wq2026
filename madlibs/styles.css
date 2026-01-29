@@ -1,0 +1,17 @@
+body {
+    color: rgb(221, 211, 204) ;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header, footer {
+    background-color: rgb(47, 58, 86) ;
+    text-align: center;
+    height: 125px;
+    display: grid;
+    place-content: center;
+}
