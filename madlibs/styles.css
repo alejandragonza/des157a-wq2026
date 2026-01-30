@@ -1,5 +1,10 @@
 body {
-    color: rgb(221, 211, 204) ;
+    background-color:#c7daff;
+    color:rgb(47, 58, 86);
+}
+h1 {
+    color:rgb(221, 211, 204) ;
+    font-family: "Sigmar One";
 }
 
 img {
@@ -14,4 +19,69 @@ header, footer {
     height: 125px;
     display: grid;
     place-content: center;
+}
+h2 {
+    color: rgb(47, 58, 86);
+    font-family: "Sigmar One";
+}
+button {
+    background-color: rgb(47, 58, 86) ;
+    color: rgb(221, 211, 204);
+    font-family: "Montserrat";
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(221, 211, 204) ;
+    color: rgb(47, 58, 86) ;
+}
+
+footer p {
+    font-family: "Montserrat";
+}
+main {
+    display: flex;
+    width: 900px;
+    margin: auto; 
+}
+
+section {
+    flex: 1;
+    padding: 40px;
+}
+p {
+    font-family: "Montserrat";
+}
+#madlib-questions {
+    display: block;
+}
+
+#madlib-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-color:  rgb(47, 58, 86)  ;
+}
+#madlib-overlay article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(221, 211, 204);
+    width: 60%;
+    height: 70%;
+    padding: 40px;
+}
+
+form input, form label {
+    display: block;
+    font-family: "Montserrat";
+    padding: 5px;
+}
+form input {
+    margin-bottom: 1em;
 }
