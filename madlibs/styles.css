@@ -9,8 +9,10 @@ h1 {
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
+    
+    
 }
 
 header, footer {
@@ -19,6 +21,9 @@ header, footer {
     height: 125px;
     display: grid;
     place-content: center;
+    padding: none;
+    margin: auto;
+    
 }
 h2 {
     color: rgb(47, 58, 86);
@@ -31,6 +36,8 @@ button {
     padding: 10px;
     font-weight: 600;
     border-radius: 10px;
+    line-height: 1em;
+    
 }
 button:hover {
     background-color: rgb(221, 211, 204) ;
@@ -39,7 +46,9 @@ button:hover {
 
 footer p {
     font-family: "Montserrat";
+    color:  rgb(221, 211, 204) ;
 }
+
 main {
     display: flex;
     width: 900px;
@@ -50,8 +59,18 @@ section {
     flex: 1;
     padding: 40px;
 }
+
 p {
     font-family: "Montserrat";
+}
+
+form input, form label {
+    display: block;
+    font-family: "Montserrat";
+    padding: 5px;
+}
+form input {
+    margin-bottom: 1em;
 }
 #madlib-questions {
     display: block;
@@ -76,12 +95,27 @@ background-color:  rgb(47, 58, 86)  ;
     height: 70%;
     padding: 40px;
 }
-
-form input, form label {
-    display: block;
-    font-family: "Montserrat";
-    padding: 5px;
+#madlib-overlay img {
+   width: auto;
+   height: auto;
+   justify-items: center;
+   max-width: 500px;
+   max-height: 500px;
+   padding-left: 275px;
+    
 }
-form input {
-    margin-bottom: 1em;
+
+#madlib-overlay a{
+     color:#c7daff;
+     
+}
+
+#madlib-overlay h2 {
+    text-align: center;
+}
+#madlib-overlay p{
+    width:auto;
+    padding: auto;
+    line-height: 2em;
+    
 }
