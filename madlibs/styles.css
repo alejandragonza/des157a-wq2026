@@ -21,7 +21,6 @@ header, footer {
     height: 125px;
     display: grid;
     place-content: center;
-    padding: none;
     margin: auto;
     
 }
@@ -115,7 +114,6 @@ background-color:  rgb(47, 58, 86)  ;
 }
 #madlib-overlay p{
     width:auto;
-    padding: auto;
     line-height: 2em;
     
 }
