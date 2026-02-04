@@ -23,15 +23,15 @@
 
         <section id="madlib-questions">
             <h2> Design Questions</h2>
-            <form>
+            <form id="madlibsForm" class="open">
                 <label for= "adjective"> adjective:</label>
-                <input type="text" name="adjective" id="adjective" required>
+                <input type="text" name="adjective" id="adjective" >
                 <label for="object"> object:</label>
-                <input type="text" name="object" id="object" required>
+                <input type="text" name="object" id="object" >
                 <label for="verbEnding"> verb ending in -ing: </label>
-                <input type= "text" name="verbEnding" id="verbEnding" required>
+                <input type= "text" name="verbEnding" id="verbEnding" >
                 <label for="adverb"> adverb:</label> 
-                <input type="text" name="adverb" id="adverb" required>
+                <input type="text" name="adverb" id="adverb" >
                 <label for="emotion"> emotion:</label>
                 <input type="text" name="emotion" id="emotion">
                 <label for="adjective2"> adjective:</label>
@@ -39,7 +39,7 @@
                 <button type="submit">submit</button>
             </form>
         </section>
-        <section id="madlib-overlay">
+        <section id="madlib-overlay" class="hidden">
             <article>
                 <h2>Late Night Horror Story</h2>
                 <p>It was a [adjective] night in the design studio, and the dealine was fast approaching. I started at my [object] while it was [ verb -ing] [adverb] on my screen. Fueled by cafferie and stress, I felt [emotion] but kept working anyways. </p>
@@ -48,7 +48,7 @@
 
                 <img src="images/night.png" alt="aftermath studio">
 
-                <p> <a href="#">close</a></p>
+                <button id="close"> close </button>
             </article>
 
         </section>

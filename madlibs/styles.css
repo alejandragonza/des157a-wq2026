@@ -75,14 +75,18 @@ form input {
     display: block;
 }
 
-#madlib-overlay {
-    display: none;
+
+#madlib-overlay.showing{
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 background-color:  rgb(47, 58, 86)  ;
+}
+#madlib-overlay.hidden {
+    display:none;
 }
 #madlib-overlay article {
     position: absolute;
