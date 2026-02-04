@@ -23,49 +23,62 @@
        let myText;
 
        if (adjective == ''){
-        myText= "please provide a adjective";
+        alert("please provide an adjective");
        document.querySelector ('#adjective').focus();
+       return;
         }
         else if (object == ''){
-            myText= "please provide a object";
+            alert("please provide a object");
            document.querySelector ('#object').focus();
+           return;
             }
         else if (verbEnding == ''){
-            myText= "please provide a verb ending in ing";
+            alert("please provide a verb ending in ing");
            document.querySelector ('#verbEnding').focus();
+           return;
             }
         else if (adverb == ''){
-            myText= "please provide a adverb";
+            alert("please provide a adverb");
            document.querySelector ('#adverb').focus();
+           return;
             }
         else if (emotion == ''){
-            myText= "please provide an emotion";
+            alert("please provide an emotion");
            document.querySelector ('#emotion').focus();
+           return;
             }
         else if (adjective2 == ''){
-            myText= "please provide a second adjective";
+            alert("please provide a second adjective");
            document.querySelector ('#adjective2').focus();
+           return;
             }
-        else {
-            myText= `you typed these words ${adjective}, ${object}, ${verbEnding}, ${adverb}, ${emotion}, ${adjective2}`;
-        }
+        // else {
+        //     myText= `you typed these words ${adjective}, ${object}, ${verbEnding}, ${adverb}, ${emotion}, ${adjective2}`;
 
-        
-        madlibsForm.innerHTML=myText;
+            madlibQuestions.className= "hidden";
+        madlibOverlay.className= "showing";
+
+        document.querySelector('#adjOut').innerText = adjective;
+        document.querySelector('#objectOut').innerText = object;
+        document.querySelector('#verbEndingOut').innerText = verbEnding;
+        document.querySelector('#adverbOut').innerText = adverb;
+        document.querySelector('#emotionOut').innerText = emotion;
+        document.querySelector('#adj2Out').innerText = adjective2;
+
+
+
         document.querySelector('#adjective').value = '';
         document.querySelector('#object').value = '';
         document.querySelector('#verbEnding').value = '';
         document.querySelector('#adverb').value = '';
         document.querySelector('#emotion').value = '';
         document.querySelector('#adjective2').value = '';
+        // }
+        
 
-    });
-    document.querySelector('.open').addEventListener('submit', function (){
-        document.querySelector('#madlib-overlay').className= 'showing';
-    });
+        
+        // madlibsForm.innerHTML=myText
 
-    document.querySelector('.close').addEventListener('click', function (){
-        document.querySelector('#madlib-questions').className= 'hidden';
     });
 
     document.addEventListener('keydown', function (event ){
@@ -73,8 +86,10 @@
             madlibOverlay.className='showing';
         };
     });
-    myBtn.addEventListener('click', function (event ){
+    myBtn.addEventListener('click', function ( ){
         
-        madlibOverlay.className= 'close';
+        madlibOverlay.className= 'hidden';
     });
+
+    
 })();
