@@ -88,6 +88,22 @@ footer a:hover {
         padding-top: 60px;
         box-sizing: border-box;
     }
+    img {
+      display: block;
+      margin: auto;
+      padding: 20px;
+    }
+
+    figure {
+      text-align: center;
+    }
+    
+    figcaption {
+      font-family: "Montserrat";
+      font-size: 0.9em;
+      margin-top: 0.5em;
+      color: #a63961;
+    }
   
     p {
       max-width: 60em;      
