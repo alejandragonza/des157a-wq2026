@@ -29,13 +29,14 @@ h2 {
     font-family: "Sigmar One";
 }
 button {
-    background-color: rgb(47, 58, 86) ;
-    color: rgb(221, 211, 204);
+    color: rgb(47, 58, 86) ;
+    background-color: rgb(221, 211, 204);
     font-family: "Montserrat";
     padding: 10px;
     font-weight: 600;
     border-radius: 10px;
     line-height: 1em;
+    margin-top: 40px;
     
 }
 button:hover {
