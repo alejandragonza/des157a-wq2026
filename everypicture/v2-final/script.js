@@ -5,10 +5,10 @@
     const myImages = ['sketch2.jpg', 'purse.jpg', 'coffee.jpg', 'makeup.jpg'];
 
     const descriptions = [
-        "This is the original sketch.",
-        "A purse translated into form and texture.",
-        "Coffee captured as shape and tone.",
-        "Makeup objects reimagined through line."
+        "The objects that every designer carries with them. It holds the story of things that are most important to them. Few objects that spark that creativity within them.",
+        "The objects that are the most near and dear to girls. The objects that seem mundane to others but captures the essence of girlhood. Every girl has these objects within their own purse in their own manner.",
+        "Capturing the essence of people's coffee order. A very personal order that can reflect a lot about a person.",
+        "The epitome of girlhood. Girls begin to be mischiveous when they dig into their moms makeup. Destroying their makeup up it is ultimately the beginning of them tapping into their femininity. "
     ];
     
     let currentImage=0;
