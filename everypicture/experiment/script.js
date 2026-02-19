@@ -1,4 +1,7 @@
 (function () {
+    'use strict';
+    console.log ('reading js');
+    
     const myImages = ['sketch2.jpg', 'purse.jpg', 'coffee.jpg'];
     
     let currentImage=0;
