@@ -2,7 +2,7 @@
     'use strict';
     console.log ('reading js');
     
-    const myImages = ['sketch2.jpg', 'purse.jpg', 'coffee.jpg', 'makeup.jpg', 'room.jpg'];
+    const myImages = ['sketch2.jpg', 'purse.JPG', 'coffee.JPG', 'makeup.JPG', 'room.JPG'];
 
     const descriptions = [
         "The objects that every designer carries with them. It holds the story of things that are most important to them. Few objects that spark that creativity within them.",
