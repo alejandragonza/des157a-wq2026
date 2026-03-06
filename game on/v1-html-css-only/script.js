@@ -1,10 +1,15 @@
 (function (){
     "use strict";
     console.log ("reading js");
+
+    //timer
+
     let timer;
     let timeLeft = 2;
+    const winSound = document.querySelector (".winSound");
+    const loseSound = document.querySelector (".loseSound");
 
-// game
+// game details
 const game = {
     colors: ["red", "blue", "green", "yellow", "purple"],
     score: 0,
@@ -14,11 +19,14 @@ const game = {
     
 }
 
+//html stuff here
 const colorWord = document.querySelector ("#colorWord");
 const scoreDisplay = document.querySelector ("#score");
 const startBtn = document.querySelector ("#startBtn");
 const buttons = document.querySelectorAll (".color-btn");
 const buttonContainer = document.querySelector (".button-container");
+
+// have to figure this out bc its not really working
 
 const startTimer = () => {
     timeLeft = 2;
@@ -32,18 +40,22 @@ const startTimer = () => {
 
         if (timeLeft <= 0) {
             clearInterval(timer);
-            endGame("TIME'S UP!", "red");  // end game if time runs out
+        // this doesnt happen have to figure out
+            endGame();  
+        //add sound here too
+        loseSound.currentTime = 0;
+        loseSound.play();
         }
     }, 1000);
 };
 
+//game bones
 const startGame = () => { 
     game.score= 0;
     game.status = "playing";
     scoreDisplay.textContent = game.score;
     startBtn.style.display = "none";
     buttonContainer.classList.remove("hidden");
-    console.log (buttonContainer);
 
     nextRound ();
 };
@@ -53,6 +65,9 @@ const endGame = () => {
     colorWord.textContent = "GAME OVER";
     colorWord.style.color = "black";
     startBtn.style.display = "inline-block";
+    //add lose sound here
+    loseSound.currentTime = 0;
+    loseSound.play();
 };
 const nextRound = () => {
     const randomWord = game.colors [Math.floor(Math.random () * game.colors.length)];
@@ -85,6 +100,10 @@ const handleGuess = (event) => {
         colorWord.textContent = "YOU WIN!";
         colorWord.style.color = "#B53324";
         startBtn.style.display = "inline-block";
+
+        // play win sound
+        winSound.currentTime = 0;
+        winSound.play ();
         return;
     }  
     nextRound ();
@@ -95,19 +114,20 @@ const handleGuess = (event) => {
 }
 };
 
+//start game 
 startBtn.addEventListener ("click", startGame);
 
 
-//game sound
+//game sounds add here
 buttons.forEach (button => {
     button.addEventListener ("click", handleGuess);
 })
 
 
 // overlay
-const overlay = document.querySelector ('.overlay');
+const overlay = document.querySelector ('#howToOverlay');
 const closeBtn = document.querySelector ('.close-btn');
-// const startBtn = document.querySelector ('.start-btn');
+
 
 closeBtn.addEventListener ('click', function (){
     overlay.classList.add ('hidden');
