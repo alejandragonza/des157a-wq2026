@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- how to play -->
+     <div id="howToOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>How To Play</h2>
+            <p>
+                1. Press <strong>Start Game </strong> to begin. <br><br>
+                2. A color word will appear at the top. <br><br>
+                3. Click the button that matches the COLOR of the text<br><br>
+                4. Score points for correct answers. <br><br>
+            </p>
+            <button id="closeOverlay" class="close-btn"> Got It!</button>
+        </div>
+     </div>
+
+     <!-- game -->
+      <header class="top-bar">
+        
+      </header>
+
+      <main class="game-area">
+        <div class="score"> Score: <span id="score">0 </span></div>
+        <h1 id="colorWord"> PRESS START</h1>
+
+        <div class="button-container hidden">
+            <button class="color-btn" data-color="red">Red</button>
+            <button class="color-btn" data-color="blue">Blue</button>
+            <button class="color-btn" data-color="green">Green</button>
+            <button class="color-btn" data-color="yellow">Yellow</button>
+            <button class="color-btn" data-color="purple">Purple</button>
+        </div>
+
+        <button id="startBtn" class="start-btn"> Start Game</button>
+      </main>
+
+      <audio class="winSound" src="sounds/win.mp3"></audio>
+      <audio class="loseSound" src="sounds/buzzer.mp3"></audio>
+
+      <footer>
+        created by alejandra | sound effects by eritnhut1992 & u_jspnqv1glx
+      </footer>
+
+    
+</body>
+</html>
