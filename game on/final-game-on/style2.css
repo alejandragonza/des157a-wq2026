@@ -1,6 +1,6 @@
 a {
     color: #B53324;
-    padding: 20px;
+   
  }
  body{
     display: flex;
@@ -12,6 +12,16 @@ a {
  h1 {
     color: #B53324;
     text-align: center;
-    
-    
+    font-family: "DM Mono", monospace;
+ }
+
+ li {
+    padding: 20px;
+    font-family: "DM Mono";
+ }
+ ul{
+    text-align: center;
+    font-family: "DM Mono";
+    padding: 20px;
+    line-height: 1.6em;
  }
