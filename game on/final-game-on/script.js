@@ -26,7 +26,7 @@ const startBtn = document.querySelector ("#startBtn");
 const buttons = document.querySelectorAll (".color-btn");
 const buttonContainer = document.querySelector (".button-container");
 
-// have to figure this out bc its not really working
+
 
 const startTimer = () => {
     timeLeft = 2;
@@ -94,7 +94,7 @@ const handleGuess = (event) => {
         //correct answer
         game.score++;
         scoreDisplay.textContent = game.score;
-        // add game sounds here winning
+       
 
         //check for win
     if (game.score >= 10){
@@ -102,10 +102,8 @@ const handleGuess = (event) => {
         colorWord.textContent = "YOU WIN!";
         colorWord.style.color = "#B53324";
         startBtn.style.display = "inline-block";
-        buttonContainer.style.display = "none";
-        //i think i can hidd the color button heres woth the div button-container and make it hidden idk if i need to do a hidden classlist? 
+        buttonContainer.style.display = "none"; 
         
-
         // play win sound
         winSound.currentTime = 0;
         winSound.play ();
