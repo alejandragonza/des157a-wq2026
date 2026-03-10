@@ -1,0 +1,17 @@
+a {
+    color: #B53324;
+    padding: 20px;
+ }
+ body{
+    display: flex;
+    flex-direction: column;
+    color: #B53324;
+    background-color: #E5A657;
+    height: 100vh;
+ }
+ h1 {
+    color: #B53324;
+    text-align: center;
+    
+    
+ }

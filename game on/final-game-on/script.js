@@ -40,7 +40,7 @@ const startTimer = () => {
 
         if (timeLeft <= 0) {
             clearInterval(timer);
-        // this doesnt happen have to figure out
+  
             endGame();  
         //add sound here too
         loseSound.currentTime = 0;
@@ -65,6 +65,7 @@ const endGame = () => {
     colorWord.textContent = "GAME OVER";
     colorWord.style.color = "black";
     startBtn.style.display = "inline-block";
+    buttonContainer.style.display = "none";
     //add lose sound here
     loseSound.currentTime = 0;
     loseSound.play();
@@ -79,6 +80,7 @@ const nextRound = () => {
 
     colorWord.textContent = randomWord.toUpperCase ();
     colorWord.style.color = randomColor;
+    buttonContainer.style.display = "inline-block";
 
     startTimer ();
 };
@@ -100,6 +102,9 @@ const handleGuess = (event) => {
         colorWord.textContent = "YOU WIN!";
         colorWord.style.color = "#B53324";
         startBtn.style.display = "inline-block";
+        buttonContainer.style.display = "none";
+        //i think i can hidd the color button heres woth the div button-container and make it hidden idk if i need to do a hidden classlist? 
+        
 
         // play win sound
         winSound.currentTime = 0;

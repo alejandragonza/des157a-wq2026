@@ -16,11 +16,14 @@ body {
    font-size: large;
    font-family: "DM Mono", monospace;
    font-weight:500;
-
 }
+
 h1 {
     color: #B53324; 
 
+}
+a {
+   color: #E5A657;
 }
  header {
     background-color: #B53324;
@@ -68,8 +71,9 @@ h1 {
     font-family: "DM Mono", monospace;
     font-weight: 400;
     font-size: medium;
-   
-
+ }
+ #startBtn :hover {
+   color:yellow;
 
  }
  .overlay {
